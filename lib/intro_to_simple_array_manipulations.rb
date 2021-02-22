@@ -16,10 +16,15 @@ end
 
 def using_delete(array, string)
   array.delete(string)
-end
+
+
+def using_delete_at(array, integer)
+  array.delete_at(integer)
+end 
 
 puts using_concat([1,2,3],[4,5,6])
 puts using_insert([1,2,3,4,5,6], 10)
 puts using_uniq([1,1,2,3,3,3,4,4,5,6])
 puts using_flatten([[1,2,3], [4,5,6], 7, 8, 9])
 puts using_delete(["hello", "my", "name", "is", "ronnie"], "is")
+puts using_delete(["hello", "my", "name", "is", "ronnie"], 2)
