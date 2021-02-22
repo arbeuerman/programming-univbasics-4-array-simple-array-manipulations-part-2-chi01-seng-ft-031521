@@ -11,5 +11,10 @@ def using_uniq(array)
 end 
 
 def using_flatten(array)
-  
+  array.flatten 
 end 
+
+puts using_concat([1,2,3],[4,5,6])
+puts using_insert([1,2,3,4], 10)
+puts using_uniq([1,1,2,3,3,3,4,4,5,6])
+puts using_flatten([[1,2,3], [4,5,6], 7, 8, 9])
